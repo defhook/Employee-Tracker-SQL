@@ -161,9 +161,10 @@ function selectManager() {
       if (err) throw err;
       for (var i = 0; i < res.length; i++) {
         //managersArr.push({ name: res[i].first_name, value: res[i].employee_id});
-        managersArr.push({res[i].first_name: res[i].employee_id});
+        //managersArr.push({res[i].first_name: res[i].employee_id});
 
-        //managersArr.push( res[i].first_name);
+        managersArr.push(res[i].first_name);
+        
       }
     }
   );
